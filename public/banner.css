@@ -1,0 +1,53 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body{
+	height: 100%;
+}
+.banner-wrap{
+	height: 100%;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+.banner{
+	width: 960px;
+	height: 540px;
+	overflow: hidden;
+	position: relative;
+}
+.banner span{
+	display: block;
+	width: 100%;
+	height: 540px;
+	overflow: hidden;
+}
+.banner-bar{
+	position: absolute;
+	bottom: 20px;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+.banner-bar > span{
+	border: 1px solid rgba(0, 0, 0, .5);
+	border-radius: 100%;
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 5px;
+}
+.banner-bar > span.bar-item-active{
+	background-color: rgba(0, 0, 0, .5);
+}
+.banner-transition-enter {
+  opacity: .01;
+  transition: opacity .5s ease-in;
+}
+.banner-transition-enter.banner-transition-enter-active {
+  opacity: 1;
+}
